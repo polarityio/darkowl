@@ -1,0 +1,12 @@
+{
+  "main": "./integration.js",
+  "name": "DarkOwl",
+  "version": "3.0.0-beta",
+  "private": true,
+  "dependencies": {
+    "request": "^2.88.2",
+    "lodash": "^4.17.21",
+    "async": "^3.2",
+    "moment": "^2.29.1"
+  }
+}

@@ -1,0 +1,82 @@
+{{#if details.results}}
+  <div>
+    <span class="p-title">{{fa-icon "info" fixedWidth=true}} Result Detail</span>
+  </div>
+  {{#each details.results as |result index|}}
+      <h1 class="p-title">
+        Result #{{inc index}}
+      </h1>
+      {{#if result.id}}
+        <div>
+            <a href="https://vision.darkowl.com/#/research?docid={{result.id}}" class="p-link">Pivot to DarkOwl Vision {{fa-icon "external-link-square" class="external-link-icon"}}</a>
+        </div>
+      {{/if}}
+      {{#if result.hackPercent}}
+        <div>
+            <span class="p-key">Hackishness: </span>
+            <span class="p-value"><b>{{result.hackPercent}}%</b></span>
+        </div>
+      {{/if}}
+      {{#if result.title}}
+        <div>
+            <span class="p-key">Title: </span>
+            <span class="p-value">{{result.title}}</span>
+        </div>
+      {{/if}}
+      {{#if result.domain}}
+        <div>
+            <span class="p-key">Domain: </span>
+            <span class="p-value">{{result.domain}}</span>
+        </div>
+      {{/if}}
+      {{#if result.network}}
+        <div>
+            <span class="p-key">Network: </span>
+            <span class="p-value">{{result.network}}</span>
+        </div>
+      {{/if}}
+      {{#if result.crawlDate}}
+        <div>
+            <span class="p-key">Crawl Date: </span>
+            <span class="p-value">{{result.crawlDate}}</span>
+        </div>
+      {{/if}}
+      {{#if result.leak.name}}
+        <div>
+            <span class="p-key">Leak Name: </span>
+            <span class="p-value">{{result.leak.name}}</span>
+        </div>
+      {{/if}}
+      {{#if result.leak.host}}
+        <div>
+            <span class="p-key">Leak Host: </span>
+            <span class="p-value">{{result.leak.host}}</span>
+        </div>
+      {{/if}}
+      {{#if result.leak.filepath}}
+        <div>
+            <span class="p-key">Leak Filepath: </span>
+            <span class="p-value">{{result.leak.filepath}}</span>
+        </div>
+      {{/if}}
+      {{#if result.leak.filename}}
+        <div>
+            <span class="p-key">Leak Filename: </span>
+            <span class="p-value">{{result.leak.filename}}</span>
+        </div>
+      {{/if}}
+      {{#if result.highlight}}
+        <div class="toggle-header">
+          <span class="p-action" {{action "toggleShowRelated"}}>
+            {{fa-icon "comments-alt" fixedWidth=true}}
+            View Result Body
+            {{fa-icon (if showRelated "caret-up" "caret-down") fixedWidth=true}}
+          </span>
+        </div>
+        {{#if showRelated}}
+            <div class="post-container">{{{result.highlight}}}</div>
+        {{/if}}
+      {{/if}}
+      <hr>
+  {{/each}}
+{{/if}}
