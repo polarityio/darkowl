@@ -26,6 +26,7 @@ module.exports = {
   entityTypes: ['IPv4', 'domain', 'email', 'hash', 'cve'],
   styles: ["./styles/style.less"],
   defaultColor: 'light-pink',
+  onDemandOnly: true,
   /**
    * Provide custom component logic and template for rendering the integration details block.  If you do not
    * provide a custom template and/or component then the integration will display data as a table of key value
@@ -42,27 +43,18 @@ module.exports = {
       file: './templates/block.hbs'
     }
   },
-  summary: {
-    component: {
-      file: './components/summary.js'
-    },
-    template: {
-      file: './templates/summary.hbs'
-    }
-  },
-  onDemandOnly: false,
   request: {
     // Provide the path to your certFile. Leave an empty string to ignore this option.
-    // Relative paths are relative to the Urlhaus integration's root directory
+    // Relative paths are relative to the integration's root directory
     cert: '',
     // Provide the path to your private key. Leave an empty string to ignore this option.
-    // Relative paths are relative to the Urlhaus integration's root directory
+    // Relative paths are relative to the integration's root directory
     key: '',
     // Provide the key passphrase if required.  Leave an empty string to ignore this option.
-    // Relative paths are relative to the Urlhaus integration's root directory
+    // Relative paths are relative to the integration's root directory
     passphrase: '',
     // Provide the Certificate Authority. Leave an empty string to ignore this option.
-    // Relative paths are relative to the Urlhaus integration's root directory
+    // Relative paths are relative to the integration's root directory
     ca: '',
     // An HTTP proxy to be used. Supports proxy Auth with Basic Auth, identical to support for
     // the url parameter (by embedding the auth info in the uri)

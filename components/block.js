@@ -1,10 +1,8 @@
 polarity.export = PolarityComponent.extend({
   details: Ember.computed.alias('block.data.details'),
-  showRelated: false,
-
   actions: {
-    toggleShowRelated: function () {
-      this.toggleProperty(`showRelated`);
+    toggleShowRelated: function (index) {
+      this.toggleProperty(`details.results.${index}._showRelated`);
       this.get('block').notifyPropertyChange('data');
     }
   }

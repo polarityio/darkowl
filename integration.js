@@ -52,20 +52,36 @@ function doLookup(entities, options, cb) {
   Logger.debug(entities);
   entities.forEach((entity) => {
     let verb = 'GET';
-    let path = '/api/v1/search?q=' + `${entity.value}` + '&count=' + options.resultCount + '&sort=' + options.sortBy.value + '&highlight=true';
+    let path =
+      '/api/v1/search?q=' +
+      `"${entity.value}"` +
+      '&count=' +
+      options.resultCount +
+      '&sort=' +
+      options.sortBy.value +
+      '&highlight=true';
     let timestamp = moment.utc().format('ddd, D MMM YYYY HH:mm:ss') + ' GMT';
     let signature = verb + path + timestamp;
 
     Logger.trace({ signature: signature }, 'String to Hash');
 
-    let hmacSignatureInBase64 = crypto.createHmac('sha1', options.privateKey).update(signature).digest('base64');
-    let auth_header = 'OWL ' + options.publicKey + ':' + hmacSignatureInBase64
+    let hmacSignatureInBase64 = crypto
+      .createHmac('sha1', options.privateKey)
+      .update(signature)
+      .digest('base64');
+    let auth_header = 'OWL ' + options.publicKey + ':' + hmacSignatureInBase64;
 
     Logger.trace({ auth_header: auth_header }, 'Auth Header');
 
     let requestOptions = {
       method: verb,
-      uri: options.url + path,
+      uri: `${options.url}/api/v1/search`,
+      qs: {
+        q: `"${entity.value}"`,
+        count: options.resultCount,
+        sort: options.sortBy.value,
+        highlight: true
+      },
       headers: {
         Authorization: auth_header,
         Date: timestamp
@@ -75,8 +91,8 @@ function doLookup(entities, options, cb) {
 
     Logger.trace({ requestOptions }, 'Request Options');
 
-    tasks.push(function(done) {
-      requestWithDefaults(requestOptions, function(error, res, body) {
+    tasks.push(function (done) {
+      requestWithDefaults(requestOptions, function (error, res, body) {
         let processedResult = handleRestError(error, entity, res, body);
 
         if (processedResult.error) {
@@ -97,31 +113,38 @@ function doLookup(entities, options, cb) {
     }
 
     results.forEach((result) => {
-      if (!result || result.body === null || !result.body.results || result.body.results === null || result.body.results.length === 0) {
+      if (
+        !result ||
+        result.body === null ||
+        !result.body.results ||
+        result.body.results === null ||
+        result.body.results.length === 0
+      ) {
         lookupResults.push({
           entity: result.entity,
           data: null
         });
       } else {
-
         result.body.results.forEach((result) => {
           result.hackPercent = Math.round(result.hackishness * 100);
           result.highlight = result.body
-            .replace(/<em>/g, '<span class=\"highlight\">')
-            .replace(/<\/em>/g, '</span>')
+            .replace(/<em>/g, '<span class="highlight">')
+            .replace(/<\/em>/g, '</span>');
         });
 
         lookupResults.push({
           entity: result.entity,
           data: {
-            summary: [],
+            summary: [
+              `Results: ${result.body.resultCount} of ${result.body.total} total`
+            ],
             details: result.body
           }
         });
       }
     });
 
-    Logger.debug({ lookupResults }, 'Results');
+    //Logger.debug({ lookupResults }, 'Results');
     cb(null, lookupResults);
   });
 }
@@ -150,7 +173,7 @@ function handleRestError(error, entity, res, body) {
   } else if (res.statusCode === 403) {
     result = {
       error: 'Unknown or suspicious activity detected',
-      detail: body.message,
+      detail: body.message
     };
   } else if (res.statusCode === 429) {
     result = {
@@ -171,7 +194,8 @@ function handleRestError(error, entity, res, body) {
 function validateOption(errors, options, optionName, errMessage) {
   if (
     typeof options[optionName].value !== 'string' ||
-    (typeof options[optionName].value === 'string' && options[optionName].value.length === 0)
+    (typeof options[optionName].value === 'string' &&
+      options[optionName].value.length === 0)
   ) {
     errors.push({
       key: optionName,
@@ -186,7 +210,6 @@ function validateOptions(options, callback) {
   validateOption(errors, options, 'url', 'You must provide a valid URL.');
   validateOption(errors, options, 'publicKey', 'You must provide a valid Public Key.');
   validateOption(errors, options, 'privateKey', 'You must provide a valid Private Key.');
-
 
   callback(null, errors);
 }
