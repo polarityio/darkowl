@@ -70,13 +70,13 @@
     {{/if}}
     {{#if result.highlight}}
       <div class="toggle-header">
-        <span class="p-action" {{action "toggleShowRelated"}}>
+        <span class="p-action" {{action "toggleShowRelated" index}}>
           {{fa-icon "comments-alt" fixedWidth=true}}
           View Result Body
-          {{fa-icon (if showRelated "caret-up" "caret-down") fixedWidth=true}}
+          {{fa-icon (if result._showRelated "caret-up" "caret-down") fixedWidth=true}}
         </span>
       </div>
-      {{#if showRelated}}
+      {{#if result._showRelated}}
           <div class="post-container">{{{result.highlight}}}</div>
       {{/if}}
     {{/if}}
