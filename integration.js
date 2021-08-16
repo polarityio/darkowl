@@ -49,6 +49,12 @@ function doLookup(entities, options, cb) {
   let lookupResults = [];
   let tasks = [];
 
+  for (const entity of entities) {
+    if (entity.types.indexOf('custom.phoneNumbers') >= 0) {
+      Logger.trace({ added_ent: entity });
+    }
+  }
+
   Logger.debug(entities);
   entities.forEach((entity) => {
     let verb = 'GET';
@@ -150,6 +156,7 @@ function doLookup(entities, options, cb) {
 }
 
 function handleRestError(error, entity, res, body) {
+  Logger.trace({ RES: res });
   let result;
 
   if (error) {

@@ -22,9 +22,40 @@ module.exports = {
    * @type String
    * @optional
    */
-  description: 'DarkOwl is the world’s leading provider of DARKINT™, darknet intelligence and the world’s largest commercially available database of darknet content.',
-  entityTypes: ['IPv4', 'domain', 'email', 'hash', 'cve'],
-  styles: ["./styles/style.less"],
+  description:
+    'DarkOwl is the world’s leading provider of DARKINT™, darknet intelligence and the world’s largest commercially available database of darknet content.',
+  entityTypes: ['IPv4', 'domain', 'email', 'hash', 'cve', 'string'],
+  customTypes: [
+    {
+      key: 'username',
+      regex: /^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$/
+    },
+    {
+      key: 'company',
+      regex: /^[0-9A-Za-z'!-]+(?:\s[0-9A-Za-z'!-]+)*$/
+    },
+    {
+      key: 'name',
+      regex: /^[a-z ,.'-]+$/i
+    },
+    {
+      key: 'phoneNumber',
+      regex: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
+    },
+    // {
+    //   key: 'cryptocurrencies', 
+    //   regex: TODO
+    // }
+    // {
+    //   key: 'ssn',
+    //   regex: /^(\d{3}-?\d{2}-?\d{4}|XXX-XX-XXXX)$/
+    // },
+    // {
+    //   key: 'creditCard',
+    //   regex: /\b(?:\d{4}[ -]?){3}(?=\d{4}\b) || (?:^3[47][0-9]{13}$)/
+    // }
+  ],
+  styles: ['./styles/style.less'],
   defaultColor: 'light-pink',
   onDemandOnly: true,
   /**
@@ -72,71 +103,72 @@ module.exports = {
    * @type Array
    * @optional
    */
-   options: [
-     {
-       key: "url",
-       name: "Base URL for the DarkOwl API",
-       description:
-         "The base URL for the DarkOwl API including the schema (i.e., https://)",
-       type: "text",
-       default: "https://api.darkowl.com",
-       userCanEdit: false,
-       adminOnly: true
-     },
-     {
-       key: 'publicKey',
-       name: 'Public Key',
-       description: 'Valid DarkOwl Public Key',
-       default: '',
-       type: 'password',
-       userCanEdit: true,
-       adminOnly: false
-     },
-     {
-       key: 'privateKey',
-       name: 'Private Key',
-       description: 'Valid DarkOwl Private Key corresponding to the provided Public Key',
-       default: '',
-       type: 'password',
-       userCanEdit: true,
-       adminOnly: false
-     },
-     {
-        key: 'resultCount',
-        name: 'Maximum Number of Results',
-        description:
-          'The maximum number of API search results that will be displayed in the Polarity Overlay window. (Default: 5)',
-        default: 5,
-        type: 'number',
-        userCanEdit: true,
-        adminOnly: false
+  options: [
+    {
+      key: 'url',
+      name: 'Base URL for the DarkOwl API',
+      description:
+        'The base URL for the DarkOwl API including the schema (i.e., https://)',
+      type: 'text',
+      default: 'https://api.darkowl.com',
+      userCanEdit: false,
+      adminOnly: true
+    },
+    {
+      key: 'publicKey',
+      name: 'Public Key',
+      description: 'Valid DarkOwl Public Key',
+      default: '',
+      type: 'password',
+      userCanEdit: true,
+      adminOnly: false
+    },
+    {
+      key: 'privateKey',
+      name: 'Private Key',
+      description: 'Valid DarkOwl Private Key corresponding to the provided Public Key',
+      default: '',
+      type: 'password',
+      userCanEdit: true,
+      adminOnly: false
+    },
+    {
+      key: 'resultCount',
+      name: 'Maximum Number of Results',
+      description:
+        'The maximum number of API search results that will be displayed in the Polarity Overlay window. (Default: 5)',
+      default: 5,
+      type: 'number',
+      userCanEdit: true,
+      adminOnly: false
+    },
+    {
+      key: 'sortBy',
+      name: 'Sort Results By',
+      description:
+        'Return the search results in a particular order. Options are Relevancy, Hackishness or Date Crawled (most recent)',
+      default: {
+        value: 'd',
+        display: 'Date Crawled'
       },
-      {
-        key: 'sortBy',
-        name: 'Sort Results By',
-        description: 'Return the search results in a particular order. Options are Relevancy, Hackishness or Date Crawled (most recent)',
-        default: {
+      type: 'select',
+      options: [
+        {
+          value: 'r',
+          display: 'Relevancy'
+        },
+        {
+          value: 'h',
+          display: 'Hackishness'
+        },
+        {
           value: 'd',
           display: 'Date Crawled'
-        },
-        type: 'select',
-        options: [
-          {
-            value: 'r',
-            display: 'Relevancy'
-          },
-          {
-            value: 'h',
-            display: 'Hackishness'
-          },
-          {
-            value: 'd',
-            display: 'Date Crawled'
-          }
-        ],
-        multiple: false,
-        userCanEdit: true,
-        adminOnly: false
-      }
-   ]
+        }
+      ],
+      multiple: false,
+      userCanEdit: true,
+      adminOnly: false
+    }
+  ]
 };
