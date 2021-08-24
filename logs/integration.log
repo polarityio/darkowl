@@ -1,0 +1,61 @@
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24351,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T19:34:13.270Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24351,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T19:34:13.271Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24351,"level":30,"msg":"Integration started.","time":"2021-08-24T19:34:13.272Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24351,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T19:34:13.272Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24418,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T19:53:23.912Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24418,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T19:53:23.914Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24418,"level":30,"msg":"Integration started.","time":"2021-08-24T19:53:23.914Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24418,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T19:53:23.914Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24625,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T20:51:41.524Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24625,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T20:51:41.526Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24625,"level":30,"msg":"Integration started.","time":"2021-08-24T20:51:41.526Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24625,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T20:51:41.527Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24648,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T20:52:33.152Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24648,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T20:52:33.153Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24648,"level":30,"msg":"Integration started.","time":"2021-08-24T20:52:33.153Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24648,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T20:52:33.153Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24664,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T20:53:51.146Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24664,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T20:53:51.147Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24664,"level":30,"msg":"Integration started.","time":"2021-08-24T20:53:51.148Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24664,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T20:53:51.148Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24682,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T20:54:30.602Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24682,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T20:54:30.603Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24682,"level":30,"msg":"Integration started.","time":"2021-08-24T20:54:30.603Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24682,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T20:54:30.604Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24712,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T20:56:07.218Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24712,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T20:56:07.219Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24712,"level":30,"msg":"Integration started.","time":"2021-08-24T20:56:07.219Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24712,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T20:56:07.220Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24725,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T20:56:47.909Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24725,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T20:56:47.910Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24725,"level":30,"msg":"Integration started.","time":"2021-08-24T20:56:47.911Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24725,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T20:56:47.911Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24725,"level":50,"err":{"error":{"errno":"ETIMEDOUT","code":"ETIMEDOUT","syscall":"connect","address":"13.32.182.90","port":443},"detail":"HTTP Request Error"},"msg":"Error","time":"2021-08-24T20:59:03.519Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24752,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T21:00:03.448Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24752,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T21:00:03.449Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24752,"level":30,"msg":"Integration started.","time":"2021-08-24T21:00:03.449Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24752,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T21:00:03.449Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24769,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T21:00:29.640Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24769,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T21:00:29.641Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24769,"level":30,"msg":"Integration started.","time":"2021-08-24T21:00:29.641Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24769,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T21:00:29.642Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24811,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T21:02:11.617Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24811,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T21:02:11.618Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24811,"level":30,"msg":"Integration started.","time":"2021-08-24T21:02:11.618Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24811,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T21:02:11.619Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24895,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T21:32:01.645Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24895,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T21:32:01.646Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24895,"level":30,"msg":"Integration started.","time":"2021-08-24T21:32:01.646Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24895,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T21:32:01.646Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24923,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T21:35:20.386Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24923,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T21:35:20.387Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24923,"level":30,"msg":"Integration started.","time":"2021-08-24T21:35:20.388Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24923,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T21:35:20.388Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24957,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T21:36:33.035Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24957,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T21:36:33.036Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24957,"level":30,"msg":"Integration started.","time":"2021-08-24T21:36:33.037Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24957,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T21:36:33.038Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24970,"level":30,"msg":"Logger created for /app/polarity-server/integrations/darkowl","time":"2021-08-24T21:37:07.215Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24970,"level":30,"msg":"Calling integration's startup function.","time":"2021-08-24T21:37:07.216Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24970,"level":30,"msg":"Integration started.","time":"2021-08-24T21:37:07.216Z","v":0}
+{"name":"DarkOwl Vision","hostname":"dev.polarity","pid":24970,"level":30,"NODE_TLS_REJECT_UNAUTHORIZED":"0","msg":"Integration Environment Variables","time":"2021-08-24T21:37:07.217Z","v":0}
