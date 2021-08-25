@@ -143,13 +143,13 @@ function doLookup(entities, options, cb) {
         });
       }
     });
-
-    //Logger.debug({ lookupResults }, 'Results');
+    
     cb(null, lookupResults);
   });
 }
 
 function handleRestError(error, entity, res, body) {
+  Logger.trace({ RES: res });
   let result;
 
   if (error) {
