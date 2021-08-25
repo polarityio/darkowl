@@ -143,9 +143,7 @@ function doLookup(entities, options, cb) {
         });
       }
     });
-
-    //Logger.debug({ lookupResults }, 'Results');
-    Logger.trace({ RES: lookupResults });
+    
     cb(null, lookupResults);
   });
 }
