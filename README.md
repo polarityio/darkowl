@@ -21,7 +21,7 @@ DarkOwl private key that corresponds to the public key above, used for access to
 ### Max Results 
 Total results from DarkOwl to be displayed in the details block of the Polarity Overlay window. Default is set to 5. 
 
-### Sort 
+### Sort By Results
 Sort the returned results by: hackiness, date crawled and relevancy. 
 
 ## Installation Instructions
