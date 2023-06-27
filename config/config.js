@@ -23,7 +23,7 @@ module.exports = {
    * @optional
    */
   description:
-    'DarkOwl is the world\'s leading provider of DARKINT™, darknet intelligence and the world\'s largest commercially available database of darknet content.',
+    'DarkOwl is the world\'s leading provider of DARKINTb", darknet intelligence and the world\'s largest commercially available database of darknet content.',
   entityTypes: ['IPv4', 'domain', 'email', 'hash', 'cve', 'string'],
   customTypes: [
     {
@@ -86,9 +86,7 @@ module.exports = {
     ca: '',
     // An HTTP proxy to be used. Supports proxy Auth with Basic Auth, identical to support for
     // the url parameter (by embedding the auth info in the uri)
-    proxy: '',
-
-    rejectUnauthorized: true
+    proxy: ""
   },
   logging: {
     level: 'info' //trace, debug, info, warn, error, fatal
