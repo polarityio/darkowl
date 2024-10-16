@@ -3,7 +3,7 @@
   "name": "DarkOwl Vision",
   "acronym": "DOWL",
   "description": "DarkOwl is the world's leading provider of DARKINT™, darknet intelligence and the world's largest commercially available database of darknet content.",
-  "entityTypes": ["IPv4", "domain", "email", "hash", "cve", "string"],
+  "entityTypes": ["IPv4", "domain", "email", "MD5", "SHA1", "SHA256", "cve", "string"],
   "customTypes": [
     {
       "key": "username",
@@ -38,7 +38,6 @@
     "component": { "file": "./components/block.js" },
     "template": { "file": "./templates/block.hbs" }
   },
-  "request": { "cert": "", "key": "", "passphrase": "", "ca": "", "proxy": "" },
   "logging": { "level": "info" },
   "options": [
     {
