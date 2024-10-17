@@ -24,7 +24,7 @@ module.exports = {
    */
   description:
     "DarkOwl is the world's leading provider of DARKINT™, darknet intelligence and the world's largest commercially available database of darknet content.",
-  entityTypes: ['IPv4', 'domain', 'email', 'hash', 'cve', 'string'],
+  entityTypes: ['IPv4', 'domain', 'email', 'MD5', 'SHA1', 'SHA256', 'cve', 'string'],
   customTypes: [
     {
       key: 'username',
